@@ -82,7 +82,10 @@ nav {
 .banner-image {
   background-image: url("Assets/images/Circle\ design.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -242,4 +245,90 @@ footer {
   /* border: #ffffff 2px solid; */
   width: 176px;
   margin-top: 14px;
+}
+
+/* Small device  */
+@media screen and (max-width:576px) {
+  nav {
+    display: block;
+    text-align: center;
+    margin: 35px 35px 22px 35px;
+  }
+
+  .logo {
+    font-size: 17=8px;
+
+  }
+
+  .nav-right {
+    display: flex;
+    gap: none;
+    justify-content: space-between;
+  }
+
+  /* logos  */
+  .logos {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .logos img {
+    width: 51px;
+
+  }
+
+  /* Banner responsive */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 51px 14px 51px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+  }
+
+  .banner-image {
+    width: 400px;
+    height: 400px;
+  }
+
+  .banner-image>img {
+    width: 370px;
+    padding: none;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .card-title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .price {
+    font-size: 21px;
+  }
+
+  .feature-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .feature-text {
+    width: 329px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+    text-align: center;
+  }
 }
